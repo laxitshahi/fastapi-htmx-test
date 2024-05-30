@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "fastapi-htmx-test"
+version = "0.1.0"
+description = ""
+authors = ["laxitshahi <shahilax@my.yorku.ca>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.0"
+jinja2 = "^3.1.4"
+python-multipart = "^0.0.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

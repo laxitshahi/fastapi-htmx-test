@@ -22,10 +22,3 @@ def add_item(request: Request, item: str = Form(...)):
     return templates.TemplateResponse(
         "partials/item.html", {"request": request, "item": item}
     )
-
-@app.delete("/delete_item")
-def delete_item(request: Request, item: str = Form(...)):
-    if item in items:
-        items.remove(item)
-
-    return teemp

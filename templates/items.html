@@ -12,7 +12,7 @@
     <h1 class="text-2xl">Item List</h1>
     <ul id="item-list">
         {% for item in items %}
-        <li >{{ item }}</li>
+        <li>{{ item }}</li>
         {% endfor %}
     </ul>
     <form hx-post="/add_item" hx-target="#item-list" hx-swap="beforeend" hx-include="#item-input">
